@@ -1,0 +1,20 @@
+{
+  "name": "e-voting-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain-based e-voting system",
+  "main": "server.js",
+  "scripts": {
+    "test": "hardhat test",
+    "start": "node server.js",
+    "deploy": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "express": "^4.18.2",
+    "web3": "^4.0.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.0"
+  }
+}
