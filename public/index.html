@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-vote-yea"></i> Blockchain Voting System</h1>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="register">Register</button>
+            <button class="tab-btn" data-tab="vote">Vote</button>
+            <button class="tab-btn" data-tab="results">Results</button>
+        </div>
+
+        <div class="tab-content active" id="register">
+            <h2>Voter Registration</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="voter-id">Voter ID</label>
+                    <input type="text" id="voter-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="voter-name">Full Name</label>
+                    <input type="text" id="voter-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="voter-email">Email</label>
+                    <input type="email" id="voter-email" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <div class="tab-content" id="vote">
+            <h2>Cast Your Vote</h2>
+            <div class="candidates-grid" id="candidates-container">
+                <!-- Candidates will be loaded here -->
+            </div>
+        </div>
+
+        <div class="tab-content" id="results">
+            <h2>Election Results</h2>
+            <div class="results-container" id="results-display">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
